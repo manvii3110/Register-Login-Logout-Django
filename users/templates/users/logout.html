@@ -1,0 +1,14 @@
+
+{% extends 'users/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="alert alert-danger" role="alert">
+            You have been Logged out !!
+        </div>
+        
+        <a href="{% url 'login' %}" class="btn " style=" border-radius: 50px; background-color: #fd5e14; color: white;">Login In Again</a>
+    </div>
+{% endblock %}</title>

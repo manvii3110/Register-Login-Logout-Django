@@ -1,0 +1,21 @@
+
+{% extends 'users/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    <div class="container">
+       
+    
+    <div class="card">
+        <div class="card-header">
+          Hey, {{user.username}} !
+        </div>
+        <div class="card-body">
+          <p class="card-title">Username :- {{user.username}}</p>
+          <p class="card-text">Email:- {{user.email}}</p>
+          <a href="{% url 'logout' %}" class="btn " style=" border-radius: 50px; background-color: #fd5e14; color: white;">LOGOUT</a>
+        </div>
+      </div>
+    </div>
+{% endblock %}
